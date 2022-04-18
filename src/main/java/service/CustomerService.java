@@ -29,7 +29,7 @@ public class CustomerService {
         int uniqueIndex;
         for(int i=0;i<fullName.length();i++){
             uniqueIndex=i+uniqueNumber;
-            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(uniqueIndex));
+            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(fullName.length()-uniqueIndex));
 
         }
         return uniqueCustomerId.toString();
