@@ -28,8 +28,8 @@ public class CustomerService {
                 = new StringBuilder();
         int uniqueIndex;
         for(int i=0;i<fullName.length();i++){
-            uniqueIndex=i+uniqueNumber;
-            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(uniqueIndex));
+          //  uniqueIndex=i+uniqueNumber;
+            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(i));
 
         }
         return uniqueCustomerId.toString();
