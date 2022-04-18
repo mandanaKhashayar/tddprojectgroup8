@@ -12,6 +12,9 @@ public class CustomerService {
 
 
     private List<Customer> customers=new ArrayList<>();
+    public void reset(){
+        customers=null;
+    }
 
 
     //Author : Mandana Khashayar
@@ -34,9 +37,14 @@ public class CustomerService {
     }
 
 
+    //Author : Mandana Khashayar
+    //add customer to the list
     public void addNewCustomer(Customer customer) {
+        customers.add(customer);
     }
 
+    //Author : Mandana Khashayar
+    //get customer list
     public List<Customer> getCustomers() {
 
         return customers;

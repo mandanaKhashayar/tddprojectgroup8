@@ -1,6 +1,9 @@
 package entity;
 
 public class Customer {
+    private String name;
+    private String family;
+    private String uniqueId;
     public void setName(String name) {
     }
 
@@ -11,10 +14,11 @@ public class Customer {
     }
 
     public String getName() {
-        return "";
+        return name;
     }
 
     public String getFamily() {
-        return "";
+        return family;
     }
+
 }

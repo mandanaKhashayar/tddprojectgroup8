@@ -20,6 +20,7 @@ public class CustomerServiceTest {
     //tearDown after the test
     @After
     public void tearDown(){
+        customerService.reset();
         customerService=null;
     }
 
