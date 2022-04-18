@@ -1,20 +1,13 @@
 package service;
 
-import entity.Customer;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class CustomerService {
 
-    List<Customer> customers=new ArrayList<>();
 
-    public void reset(){
-        customers=null;
-    }
 
     //Author : Mandana Khashayar
     //Return UniqueCustomerId based on name and family. It adds number between characters
@@ -35,15 +28,5 @@ public class CustomerService {
 
     }
 
-    //Author : Mandana Khashayar
-    //add customer to customer List
-    public void addNewCustomer(Customer customer) {
-        customers.add(customer);
-    }
 
-    //Author : Mandana Khashayar
-    //return customer List
-    public List<Customer> getCustomers() {
-        return customers;
-    }
 }
