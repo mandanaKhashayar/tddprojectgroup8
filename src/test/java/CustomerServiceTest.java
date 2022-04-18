@@ -1,4 +1,3 @@
-import entity.Customer;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -20,7 +19,7 @@ public class CustomerServiceTest {
     //tearDown after the test
     @After
     public void tearDown(){
-        customerService.reset();
+
         customerService=null;
     }
 
@@ -36,17 +35,6 @@ public class CustomerServiceTest {
     //Author : Mandana Khashayar
     //test AddNewCustomer in CustomerService class
 
-    @Test
-    public void testAddNewCustomer(){
-        Customer customer=new Customer();
-        customer.setName("Mandana");
-        customer.setFamily("Khashayar");
-        customer.setUniqueId("M0A1N2D3A4N5A6K7H8A9S10H11A12Y13A14R15");
-        customerService.addNewCustomer(customer);
-        boolean exist= customerService.getCustomers().stream().anyMatch(c -> "MandanaKhashayar".equals(c.getName()+c.getFamily()))
-                ;
-        Assert.assertTrue(exist);
 
-    }
 
 }
