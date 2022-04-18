@@ -1,12 +1,17 @@
 package service;
 
+import entity.Customer;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class CustomerService {
 
+
+    private List<Customer> customers=new ArrayList<>();
 
 
     //Author : Mandana Khashayar
@@ -29,4 +34,11 @@ public class CustomerService {
     }
 
 
+    public void addNewCustomer(Customer customer) {
+    }
+
+    public List<Customer> getCustomers() {
+
+        return customers;
+    }
 }
