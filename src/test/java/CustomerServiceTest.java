@@ -29,8 +29,8 @@ public class CustomerServiceTest {
     @Test
     public void testUniqueCustomerIdBasedOnNameAndFamily(){
 
-       String st= customerService.getUniqueCustomerIdBasedOnNameAndFamily("Mandana","Khashayar",0);
-        Assert.assertEquals(st,"M15A14N13D12A11N10A9K8H7A6S5H4A3Y2A1R0");
+       String st= customerService.getUniqueCustomerIdBasedOnNameAndFamily("Mandana","Khashayar",2);
+        Assert.assertEquals(st,"M17A16N15D14A13N12A11K10H9A8S7H6A5Y4A3R2");
     }
 
     //Author : Mandana Khashayar
