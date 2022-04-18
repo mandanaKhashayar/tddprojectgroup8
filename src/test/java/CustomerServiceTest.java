@@ -13,6 +13,7 @@ public class CustomerServiceTest {
     //test initializer
     @Before
     public void initialize(){
+        customerService.reset();
          customerService = new CustomerService();
     }
 

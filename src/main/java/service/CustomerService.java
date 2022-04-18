@@ -12,6 +12,10 @@ public class CustomerService {
 
     List<Customer> customers=new ArrayList<>();
 
+    public void reset(){
+        customers=null;
+    }
+
     //Author : Mandana Khashayar
     //Return UniqueCustomerId based on name and family. It adds number between characters
     //in the way that the Id becomes unique
@@ -34,6 +38,7 @@ public class CustomerService {
     //Author : Mandana Khashayar
     //add customer to customer List
     public void addNewCustomer(Customer customer) {
+        customers.add(customer);
     }
 
     //Author : Mandana Khashayar
