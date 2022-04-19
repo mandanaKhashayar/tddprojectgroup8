@@ -51,7 +51,6 @@ public class CustomerServiceTest {
         Assert.assertTrue(exist);
 
     }
-
     //Author : Mandana Khashayar
     //test count Customers Based On Name And Family in CustomerService class
     @Test
@@ -72,4 +71,5 @@ public class CustomerServiceTest {
         Assert.assertEquals(2,customersNumber);
 
     }
+
 }
