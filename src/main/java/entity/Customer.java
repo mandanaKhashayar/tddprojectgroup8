@@ -23,4 +23,8 @@ public class Customer {
     public String getFamily() {
         return family;
     }
+
+    public String getUniqueId() {
+        return uniqueId;
+    }
 }
