@@ -71,7 +71,27 @@ public class CustomerServiceTest {
         Assert.assertEquals(2,customersNumber);
 
     }
+    //Author : Mandana Khashayar
+    //Integration test to see if new customer with uniqueId is correctly add to the List
+    @Test
+    public void testCreateCustomerAndAddItToCustomerList(){
+        Customer customer1=new Customer();
+        customer1.setName("Mandana");
+        customer1.setFamily("Khashayar");
+        customer1.setUniqueId("M0A1N2D3A4N5A6K7H8A9S10H11A12Y13A14R15");
+        customerService.addNewCustomer(customer1);
+        Customer customer2=new Customer();
+        customer2.setName("Mandana");
+        customer2.setFamily("Khashayar");
+        long customersNumber= customerService.
+                countCustomerBasedOnNameAndFamily(customerService.getCustomers(),customer1.getName()+ customer1.getFamily());
+        String uniqueId= customerService.getUniqueCustomerIdBasedOnNameAndFamily(customer1.getName(),customer1.getFamily(),customersNumber);
+        customer2.setUniqueId(uniqueId);
+        customerService.addNewCustomer(customer2);
+        Assert.assertEquals(2,customerService.getCustomers().size());
+        Assert.assertEquals("M16A15N14D13A12N11A10K9H8A7S6H5A4Y3A2R1",customerService.getCustomers().get(1).getUniqueId());
 
+    }
 
 
 }
