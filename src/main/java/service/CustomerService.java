@@ -26,10 +26,10 @@ public class CustomerService {
         List<Character> arrayList=  fullName.chars().mapToObj(c -> (char)c).collect(Collectors.toList());
         StringBuilder uniqueCustomerId
                 = new StringBuilder();
-        long uniqueIndex=fullName.length()+uniqueNumber-1;
+        long uniqueIndex;
         for(int i=0;i<fullName.length();i++){
-
-            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(uniqueIndex-i));
+            uniqueIndex=i+uniqueNumber;
+            uniqueCustomerId.append(arrayList.get(i)+String.valueOf(uniqueIndex));
 
         }
         return uniqueCustomerId.toString();
