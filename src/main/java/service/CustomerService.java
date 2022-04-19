@@ -48,8 +48,9 @@ public class CustomerService {
         return customers;
     }
 
-
+    //Author : Mandana Khashayar
+    //count the number of customers in customer List base on Name and Family
     public long countCustomerBasedOnNameAndFamily(List<Customer> customers, String fullName) {
-    return 0;
+        return customers.stream().filter(c -> fullName.equals(c.getName()+c.getFamily())).count();
     }
 }
