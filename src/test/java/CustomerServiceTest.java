@@ -89,7 +89,7 @@ public class CustomerServiceTest {
         customer2.setUniqueId(uniqueId);
         customerService.addNewCustomer(customer2);
         Assert.assertEquals(2,customerService.getCustomers().size());
-        Assert.assertEquals("M16A15N14D13A12N11A10K9H8A7S6H5A4Y3A2R1",customerService.getCustomers().get(1).getUniqueId());
+        Assert.assertEquals("M1A2N3D4A5N6A7K8H9A10S11H12A13Y14A15R16",customerService.getCustomers().get(1).getUniqueId());
 
     }
 
