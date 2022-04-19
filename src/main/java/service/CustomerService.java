@@ -48,9 +48,8 @@ public class CustomerService {
         return customers;
     }
 
-    //Author : Mandana Khashayar
-    //get Customers number BasedOn Name And Family
-    public int countCustomerBasedOnNameAndFamily(List<Customer> customers, String fullName) {
+
+    public long countCustomerBasedOnNameAndFamily(List<Customer> customers, String fullName) {
     return 0;
     }
 }

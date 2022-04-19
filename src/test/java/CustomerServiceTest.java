@@ -67,7 +67,7 @@ public class CustomerServiceTest {
         customers.add(customer1);
         customers.add(customer1);
         String fullName="MandanaKhashayar";
-        int customersNumber= customerService.countCustomerBasedOnNameAndFamily(customers,fullName);
+        long customersNumber= customerService.countCustomerBasedOnNameAndFamily(customers,fullName);
         Assert.assertEquals(2,customersNumber);
 
     }
