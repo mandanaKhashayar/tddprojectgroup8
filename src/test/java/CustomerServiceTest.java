@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 import service.CustomerService;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CustomerServiceTest {
 
    private CustomerService customerService;
@@ -49,5 +52,24 @@ public class CustomerServiceTest {
 
     }
 
+    //Author : Mandana Khashayar
+    //test count Customers Based On Name And Family in CustomerService class
+    @Test
+    public void testCountCustomerBasedOnNameAndFamily(){
+        Customer customer1=new Customer();
+        customer1.setName("Mandana");
+        customer1.setFamily("Khashayar");
+        customer1.setUniqueId("M0A1N2D3A4N5A6K7H8A9S10H11A12Y13A14R15");
+        Customer customer2=new Customer();
+        customer2.setName("Mandana");
+        customer2.setFamily("Khashayar");
+        customer2.setUniqueId("M0A1N2D3A4N5A6K7H8A9S10H11A12Y13A14R15");
+        List<Customer> customers =new ArrayList<>();
+        customers.add(customer1);
+        customers.add(customer1);
+        String fullName="MandanaKhashayar";
+        int customersNumber= customerService.countCustomerBasedOnNameAndFamily(customers,fullName);
+        Assert.assertEquals(2,customersNumber);
 
+    }
 }

@@ -47,4 +47,9 @@ public class CustomerService {
     public List<Customer> getCustomers() {
         return customers;
     }
+
+
+    public int countCustomerBasedOnNameAndFamily(List<Customer> customers, String fullName) {
+    return 0;
+    }
 }
