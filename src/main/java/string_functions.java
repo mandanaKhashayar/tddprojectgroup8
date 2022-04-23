@@ -1,6 +1,7 @@
 import java.util.Random;
-import java.lang.Math;  
-
+import java.lang.Math; 
+ 
+// this class is created by Lasya
 public class string_functions{  
     public int wordcnt(String string)  
       {  
