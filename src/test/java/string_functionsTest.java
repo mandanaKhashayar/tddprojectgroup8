@@ -29,7 +29,7 @@ public class string_functionsTest {
     @Test
     public void test_no_of_occr_word()
     {
-        assertEquals(2,str_funs.no_of_occr_word("This is red apple in a red bucket","red"));
+        assertEquals(2, str_funs.no_of_occr_word("This is red apple in a red bucket", "red"));
     }
 
   // Author: Lasya
