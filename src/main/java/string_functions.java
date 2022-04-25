@@ -1,8 +1,11 @@
 import java.util.Random;
 import java.lang.Math; 
  
-// this class is created by Lasya
+//Author: Lasya
+
 public class string_functions{  
+  // Author: Lasya
+  // This function will count the words in the input string 
     public int wordcnt(String string)  
       {  
         int count=0;  
@@ -17,6 +20,8 @@ public class string_functions{
           return count;  
       }  
 
+  // Author: Lasya
+  // This function will count the no of occurences of a word in the input string 
       public int no_of_occr_word(String string,String word)
       {
           String buff[] = string.split(" ");
@@ -28,6 +33,8 @@ public class string_functions{
           return count;
       }
     
+  // Author: Lasya
+  // This function will generate a random string from the input string and for a given length 
       static String gen_random_string(String string,int length)  
       {  
         // This function will generate a random string from the input string given and length provided
@@ -46,6 +53,8 @@ public class string_functions{
         return randomString;
       }
 
+  // Author: Lasya
+  // This function will generate a random number 
       static int gen_random_number()  
       {  
          // it will generate random number
