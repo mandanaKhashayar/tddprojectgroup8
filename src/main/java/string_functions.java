@@ -70,7 +70,7 @@ public class string_functions{
   }  
 
   //Author Mahesh
-  // Function to merge string and number
+  // Function to merge string and number given in the input
   public static String merge_str_num(String string,int number)
       {
         String num_str = Integer.toString(number);
