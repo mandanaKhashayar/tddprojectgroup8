@@ -54,7 +54,7 @@ public class string_functionsTest {
     @Test
     public void test_merge_str_num()
     {
-        assertEquals("G1R2E3A4T",string_functions.merge_str_num("GREAT", 12345));
+        assertEquals("G1R2E3A4T5",string_functions.merge_str_num("GREAT", 12345));
     }
 
     //Author: Mahesh
