@@ -24,7 +24,14 @@ public class string_functions{
   // This function will count the no of occurences of a word in the input string 
       public int no_of_occr_word(String string,String word)
       {
-          
+          String buff[] = string.split(" ");
+          int count = 0;
+          for ( int i=0; i< buff.length; i++)
+          {
+            if(word.equals(buff[i]))
+            count++;
+          }
+          return count;
       }
     
   // Author: Lasya
