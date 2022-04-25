@@ -73,24 +73,26 @@ public class string_functions{
   // Function to merge string and number
   public static String merge_str_num(String string,int number)
       {
-          String num_str = Integer.toString(number);
-          String num_buff[] = num_str.split("");
-          String buff[] = string.split("");
-          String new_word="";
-          int length=string.length();
-          int length1=num_str.length();
-          int counter=length;
+        String num_str = Integer.toString(number);
+        String num_buff[] = num_str.split("");
+        String buff[] = string.split("");
+        String new_word="";
+        int length=string.length();
+        int length1=num_str.length();
+        int counter=length;
 
-          if (length <= length1)
-          {
-              counter = length1;
-          }
-          
-          for (int i = 0; i < counter; i++) {
-              new_word = new_word + buff[i] + num_buff[i];
-            }
-                   
-          return new_word;
+        if (length <= length1)
+        {
+          counter=length1;
+        }
+
+        for(int i =0; i < counter; i++)
+        {
+          new_word=new_word + buff[i] + num_buff[i];
+
+        }
+        return new_word;
+   
       }
 
   //Author Mahesh
