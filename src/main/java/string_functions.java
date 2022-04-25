@@ -1,5 +1,6 @@
 import java.util.Random;
-import java.lang.Math; 
+import java.lang.Math;
+import java.util.Arrays;
  
 //Author: Lasya
 
@@ -67,4 +68,77 @@ public class string_functions{
        System.out.println(gen_random_string(string,15)) ;
        System.out.println(gen_random_number());
   }  
+
+  //Author Mahesh
+  // Function to merge string and number
+  public static String merge_str_num(String string,int number)
+      {
+          String num_str = Integer.toString(number);
+          String num_buff[] = num_str.split("");
+          String buff[] = string.split("");
+          String new_word="";
+          int length=string.length();
+          int length1=num_str.length();
+          int counter=length;
+
+          if (length <= length1)
+          {
+              counter = length1;
+          }
+          
+          for (int i = 0; i < counter; i++) {
+              new_word = new_word + buff[i] + num_buff[i];
+            }
+                   
+          return new_word;
+      }
+
+  //Author Mahesh
+  // Function to merge two strings
+
+      public static String merge_strings(String string1,String string2)
+      {
+          String buff1[] = string1.split("");
+          String buff2[] = string2.split("");
+          String new_word="";
+          int length=string1.length();
+          int length1=string2.length();
+          int counter=length;
+
+          if (length <= length1)
+          {
+              counter = length1;
+          }
+          
+          for (int i = 0; i < counter; i++) {
+              new_word = new_word + buff1[i] + buff2[i];
+            }
+                   
+          return new_word;
+      }
+
+  //Author Mahesh
+  // Function to sort characters in order for input string
+
+  public static String sort_string_chars(String string1)
+  {
+      char charArray[] = string1.toCharArray();
+      Arrays.sort(charArray);
+      String new_word=new String(charArray);
+      return new_word;
+      }
+
+  public static Object test_sort_string_chars(String string) {
+    return null;
+  }
+
+public static Object test_merge_strings(String string, String string2) {
+    return null;
 }
+
+public static Object test_merge_str_num(String string, int i) {
+    return null;
+}
+
+
+} 

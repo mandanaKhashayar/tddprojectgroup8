@@ -48,6 +48,30 @@ public class string_functionsTest {
     {
         assertTrue(400 > string_functions.gen_random_number());
     }
+
+    //Author: Mahesh
+    //This is the run test case for merge string with number
+    @Test
+    public void test_merge_str_num()
+    {
+        assertEquals("G1R2E3A4T5",string_functions.merge_str_num("GREAT", 12345));
+    }
+
+    //Author: Mahesh
+    //This is the run test case for merge string with number
+    @Test
+    public void test_merge_strings()
+    {
+        assertEquals("GHREELALTO",string_functions.merge_strings("GREAT", "HELLO"));
+    }
+
+    //Author: Mahesh
+    //This is the run test case for merge string with number
+    @Test
+    public void test_sort_string_chars()
+    {
+        assertEquals("AEGRT",string_functions.sort_string_chars("GREAT"));
+    }
     
    // Author: Lasya
    //  Integration  testing
@@ -56,6 +80,15 @@ public class string_functionsTest {
     {
         assertEquals(1,str_funs.wordcnt(string_functions.gen_random_string("ThisString",string_functions.gen_random_number())));
     }
+
+
+   // Author: Mahesh
+   //  Integration  testing
+   @Test
+   public void test_integration2()
+   {
+       assertEquals("ATEOGDRATY",string_functions.merge_strings(string_functions.sort_string_chars("GREAT"),"TODAY"));
+   }
 
 }
 
