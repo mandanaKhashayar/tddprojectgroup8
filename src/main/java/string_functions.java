@@ -122,9 +122,10 @@ public class string_functions{
 
   public static String sort_string_chars(String string1)
   {
-      char charArray[] = string1.toCharArray();
-      Arrays.sort(charArray);
-      String new_word=new String(charArray);
+     // Crate Array for storing characters of the given input string
+      char Buff_Arr[] = string1.toCharArray();
+      Arrays.sort(Buff_Arr);
+      String new_word=new String(Buff_Arr);
       return new_word;
       }
 
