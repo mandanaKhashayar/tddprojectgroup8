@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="string_functionsTest" time="0" errors="0" skipped="0">
+<testsuite tests="9" failures="1" name="string_functionsTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.14.1+1"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Hitika\VS_Code\tddprojectgroup8"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Public\tddprojectgroup8"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Hitika\VS_Code\tddprojectgroup8"/>
+    <property name="user.dir" value="C:\Users\Public\tddprojectgroup8"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.14.1+1"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Users\Hitika\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f c:\Users\Hitika\VS_Code\tddprojectgroup8\pom.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f c:\Users\Public\tddprojectgroup8\pom.xml"/>
     <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,11 +65,50 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="string_functionsTest" name="test_merge_str_num" time="0"/>
+  <testcase classname="string_functionsTest" name="test_merge_str_num" time="0.001">
+    <failure message="expected:&lt;G1R2E3A4T[]&gt; but was:&lt;G1R2E3A4T[5]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;G1R2E3A4T[]&gt; but was:&lt;G1R2E3A4T[5]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at string_functionsTest.test_merge_str_num(string_functionsTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
   <testcase classname="string_functionsTest" name="test_merge_strings" time="0"/>
   <testcase classname="string_functionsTest" name="test_no_of_occr_word" time="0"/>
   <testcase classname="string_functionsTest" name="test_integration1" time="0"/>
-  <testcase classname="string_functionsTest" name="test_integration2" time="0"/>
+  <testcase classname="string_functionsTest" name="test_integration2" time="0.001"/>
   <testcase classname="string_functionsTest" name="test_sort_string_chars" time="0"/>
   <testcase classname="string_functionsTest" name="test_wordcount" time="0"/>
   <testcase classname="string_functionsTest" name="test_gen_random_number" time="0"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="CustomerServiceTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="CustomerServiceTest" time="0.018" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.14.1+1"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Hitika\VS_Code\tddprojectgroup8"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Public\tddprojectgroup8"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Hitika\VS_Code\tddprojectgroup8"/>
+    <property name="user.dir" value="C:\Users\Public\tddprojectgroup8"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.14.1+1"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Users\Hitika\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f c:\Users\Hitika\VS_Code\tddprojectgroup8\pom.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f c:\Users\Public\tddprojectgroup8\pom.xml"/>
     <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="CustomerServiceTest" name="testCreateCustomerAndAddItToCustomerList" time="0.003"/>
+  <testcase classname="CustomerServiceTest" name="testCreateCustomerAndAddItToCustomerList" time="0.018"/>
   <testcase classname="CustomerServiceTest" name="testUniqueCustomerIdBasedOnNameAndFamily" time="0"/>
   <testcase classname="CustomerServiceTest" name="testCountCustomerBasedOnNameAndFamily" time="0"/>
   <testcase classname="CustomerServiceTest" name="testAddNewCustomer" time="0"/>
