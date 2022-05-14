@@ -26,7 +26,9 @@ public class string_functions{
 
  public int no_of_occr_word(String string,String word)
  {
-   // function without any method
+   // function without any method with 0 return to avoid compilation error
+
+   return 0;
  }
  
     
