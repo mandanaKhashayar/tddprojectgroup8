@@ -27,7 +27,8 @@ public class string_functions{
   public int no_of_occr_word(String string,String word)
   {
     // function without body or return
-    
+    return 0;
+
   }
     
   // Author: Lasya
