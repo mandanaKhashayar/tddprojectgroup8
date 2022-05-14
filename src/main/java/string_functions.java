@@ -21,22 +21,14 @@ public class string_functions{
           return count;  
       }  
 
-  // Author: Lasya
-  // Function to count the number of occurences of a word in the input string
+  // Author : Lasya
+  // Function to count the number of occurneces of a word in input string
 
   public int no_of_occr_word(String string,String word)
   {
-    //added body to the method.
-    String buff[] = string.split(" ");
-    int count = 0;
-    for (int i=0;i<buff.length; i++)
-    {
-      if(word.equals(buff[i]))
-      count++;
-    }
-    return count;
-
+    // Empty method with no return
   }
+ 
     
   // Author: Lasya
   // This function will generate a random string from the input string and for a given length 
