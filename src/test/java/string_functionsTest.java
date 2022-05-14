@@ -24,13 +24,14 @@ public class string_functionsTest {
     }
 
   // Author: Lasya
-  // This function will run the number of occurnaces of a word test and perform assertion
+  // Test function to count the number of occurence of a word test and perform assertion
 
-    @Test
-    public void test_no_of_occr_word()
-    {
-      assertEquals(2, str_funs.no_of_occr_word("This is the red apple in red bucket", "red"));
-      }
+  @Test
+  public void test_no_of_occr_word()
+  {
+    assertEquals(2,str_funs.no_of_occr_word("This is the red apple in red bucket","red"));
+  }
+  
 
   // Author: Lasya
   // This function will run the random geenration of a string and verifies if it is generated or not
