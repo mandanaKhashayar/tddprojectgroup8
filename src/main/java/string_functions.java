@@ -26,8 +26,15 @@ public class string_functions{
   
   public int no_of_occr_word(String string,String word)
   {
-    // Empty method with return 0 to avoid compilation error
-    return 0;
+    // Empty method with body
+    String buff[] = string.split(" ");
+    int count=0;
+    for (int i=0;i<buff.length; i++)
+    {
+      if(word.equals(buff[i]))
+        count++;
+    }
+    return count;
 
   }
     
