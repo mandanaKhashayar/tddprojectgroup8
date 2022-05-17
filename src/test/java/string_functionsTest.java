@@ -24,7 +24,7 @@ public class string_functionsTest {
     }
 
   // Author: Lasya
-  // Test for assertion of function no_of_occr_word
+  // New test function for testing no of occr word function
 
     @Test
     public void test_no_of_occr_word()
@@ -32,7 +32,6 @@ public class string_functionsTest {
       assertEquals(2,str_funs.no_of_occr_word("This is the red apple in red bucket", "red"));
       
     }
- 
 
   // Author: Lasya
   // This function will run the random geenration of a string and verifies if it is generated or not
