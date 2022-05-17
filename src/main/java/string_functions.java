@@ -26,7 +26,9 @@ public class string_functions{
   
   public int no_of_occr_word(String string,String word)
   {
-    // Empty method
+    // Empty method with return 0 to avoid compilation error
+    return 0;
+
   }
     
   // Author: Lasya
