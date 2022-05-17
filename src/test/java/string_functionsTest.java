@@ -23,15 +23,16 @@ public class string_functionsTest {
         assertEquals(4,str_funs.wordcnt("This is the string"));
     }
 
-  //Authod : Lasya
-  // test function to count the number of occurences of a word in input string test and perform assert
+  // Author: Lasya
+  // Test for assertion of function no_of_occr_word
 
-  public void test_no_of_occr_word()
-  {
-    assertEquals(2,str_funs.no_of_occr_word("this is red apple in red bucket", "red"));
-  
-  }
-  
+    @Test
+    public void test_no_of_occr_word()
+    {
+      assertEquals(2,str_funs.no_of_occr_word("This is the red apple in red bucket", "red"));
+      
+    }
+ 
 
   // Author: Lasya
   // This function will run the random geenration of a string and verifies if it is generated or not
